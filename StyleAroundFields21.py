@@ -16,18 +16,17 @@ from anki.hooks import addHook
 
 flag = re.MULTILINE | re.DOTALL
 def debug(p):
-    print(p)
     pass
 
 def mustacheToSpan(text, clean=False):
     """adding a span tag with class equal to its name for each mustache.
-    
+
     Replace a potential span already here
     """
     def editMustache(matchobj):
         """third element of the group is enclosed in Mustache mustache
         and span.
-        
+
         The class of the span and the name of the condition are the 2nd element
         of the group. The first element being the kind of condition to use."""
 
