@@ -16,6 +16,7 @@ from anki.hooks import addHook
 
 flag = re.MULTILINE | re.DOTALL
 def debug(p):
+    #print(p)
     pass
 
 def mustacheToSpan(text, clean=False):
